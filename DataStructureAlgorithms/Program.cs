@@ -11,7 +11,7 @@ namespace DataStructureAlgorithms
             while(flag== "Y"||flag=="y")
             {
                 Console.WriteLine("Welcome to Data Structure and Algorithms");
-                Console.WriteLine("1. permutation using Recursion");
+                Console.WriteLine("1. permutation using Recursion\n2.Binary Search");
                 int num = Convert.ToInt32(Console.ReadLine());
                 switch(num)
                 {
@@ -19,6 +19,12 @@ namespace DataStructureAlgorithms
                         PermutationOfString permutationofstring= new PermutationOfString();
                         permutationofstring.permutation();
                         break;
+
+                    case 2:
+                        BinarySearchProblem binarydearchproblem= new BinarySearchProblem();
+                        binarydearchproblem.BinarySearch();
+                        break;
+
 
                     default:
                         Console.WriteLine("-----Enter the valid option----");
